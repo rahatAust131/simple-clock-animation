@@ -5,7 +5,7 @@
 }
 
 body {
-  background: linear-gradient(to right, #2e465e, #8391a2);
+  background: linear-gradient(to right, #81abd5, #8391a2);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,6 +17,7 @@ body {
   height: 430px;
   width: 430px;
   background: #a2dfc1;
+  border: 5px solid #0c0e00;
   border-radius: 50%;
   position: relative;
 }
