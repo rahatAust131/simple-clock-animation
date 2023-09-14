@@ -6,10 +6,11 @@
 
 body {
   background: linear-gradient(to right, #2e465e, #8391a2);
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
 }
 
 .clock {
@@ -17,7 +18,6 @@ body {
   width: 430px;
   background: #a2dfc1;
   border-radius: 50%;
-  border: 3px solid black;
   position: relative;
 }
 
@@ -39,9 +39,9 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  font-size: 19px;
-  font-family: sans-serif;
-  line-height: 35px;
+  font-size: 1.75rem;
+  line-height: 6vh;
+  font-family: Helvetica;
   text-align: center;
   transform: rotate(var(--rotation));
 }
@@ -88,24 +88,24 @@ body {
   position: absolute;
   bottom: 50%;
   left: 50%;
-  border: 1px solid #ffffff;
-  border-radius: 7px 7px 0 0;
+  border: 1px solid #becac1;
+  border-radius: 10px 10px 0 0;
   transform-origin: bottom;
   z-index: 3;
   transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
 }
 .clock .hand.hour {
-  width: 7px;
+  width: 9px;
   height: 45%;
   background-color: black;
 }
 .clock .hand.minute {
-  width: 5px;
-  height: 40%;
+  width: 7px;
+  height: 35%;
   background-color: brown;
 }
 .clock .hand.second {
-  width: 3px;
-  height: 30%;
+  width: 5px;
+  height: 40%;
   background-color: #362bff;
 }
