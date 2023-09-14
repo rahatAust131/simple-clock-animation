@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #2e465e, #8391a2);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock {
+  height: 430px;
+  width: 430px;
+  background: #a2dfc1;
+  border-radius: 50%;
+  border: 3px solid black;
+  position: relative;
+}
